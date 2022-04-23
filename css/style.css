@@ -1,0 +1,498 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+  font-family: "Comforter Brush", cursive;
+  font-family: "Raleway", sans-serif;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+aside,
+nav,
+footer,
+header,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+.container {
+  max-width: 1862px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+body {
+  background-color: #051F52;
+}
+
+body.locked {
+  overflow: hidden;
+}
+
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.solar {
+  background-image: url("../img/solar-top__bg.svg");
+  background-size: cover;
+  min-height: 100vh;
+  background-position: top center;
+  background-repeat: no-repeat;
+  margin-bottom: 80px;
+}
+
+.solar__inner {
+  width: 100%;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+}
+
+.solar__logo {
+  position: absolute;
+  left: 0px;
+  top: 40px;
+}
+
+.solar__title-main {
+  text-align: center;
+  font-family: "Rock 3D";
+  font-size: 94px;
+  line-height: 59px;
+  color: #FFFFFF;
+}
+
+.solar__spheres {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  gap: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.solar__title-secondary {
+  text-align: center;
+  font-family: "Rock 3D";
+  font-size: 94px;
+  /* identical to box height */
+  color: #FFFFFF;
+}
+
+.solar-spheres__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.5s all ease;
+  -o-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+}
+
+.solar-spheres__item:hover {
+  -webkit-transform: scale(1.1, 1.1);
+      -ms-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+}
+
+.planets {
+  background-image: url("../img/planets__bg.svg");
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  margin-bottom: 60px;
+}
+
+.planets__logo {
+  margin-left: 20%;
+}
+
+.tabs {
+  width: 100%;
+  margin-top: 60px;
+}
+
+.tabs__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  row-gap: 30px;
+}
+
+.tabs__header-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px;
+  margin: 0 15px;
+  cursor: pointer;
+  border: 5px solid #fff;
+  border-radius: 17px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  gap: 10px;
+  line-height: 16px;
+  color: #FFFFFF;
+}
+
+.tabs__header-item.active {
+  background-color: #000D4F;
+}
+
+.tabs__content {
+  margin-top: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 75px;
+}
+
+.tabs__content-item {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.tabs-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 80px;
+}
+
+.tabs-top__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.tabs-top__title {
+  font-family: "Rock 3D";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 144px;
+  line-height: 209px;
+  /* identical to box height */
+  color: #FFFFFF;
+}
+
+.tabs-top__text {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+  margin-bottom: 25px;
+}
+
+.tabs-top__img {
+  max-width: 600px;
+  -webkit-transition: 0.5s all ease;
+  -o-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+}
+
+.tabs-top__img:hover {
+  -webkit-transform: scale(1.05, 1.05);
+      -ms-transform: scale(1.05, 1.05);
+          transform: scale(1.05, 1.05);
+}
+
+.saturn__img {
+  max-width: 600px;
+}
+
+.uranus__img {
+  max-width: 600px;
+}
+
+.tabs-content {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.tabs-content__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.tabs-content__item-img {
+  -webkit-transition: 0.5s all ease;
+  -o-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+}
+
+.tabs-content__item-img:hover {
+  -webkit-transform: scale(1.05, 1.05);
+      -ms-transform: scale(1.05, 1.05);
+          transform: scale(1.05, 1.05);
+}
+
+.tabs-card {
+  max-width: 460px;
+  padding: 15px;
+  height: auto;
+  border-radius: 15px;
+  border: 5px solid #fff;
+}
+
+.tabs-card__title {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 56px;
+  color: #FFFFFF;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.tabs-card__text {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #FFFFFF;
+  margin-bottom: 25px;
+}
+
+.uranus__top {
+  max-width: 600px;
+}
+
+@media (max-width: 1450px) {
+  .tabs-content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .tabs-content__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+  }
+}
+
+@media (max-width: 1449.98px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+@media (max-width: 1250px) {
+  .solar__title-main {
+    font-size: 84px;
+    margin-top: 100px;
+  }
+
+  .solar__title-secondary {
+    font-size: 84px;
+  }
+}
+
+@media (max-width: 1070px) {
+  .tabs-top {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .tabs-top__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .tabs-card {
+    padding: 10px;
+    max-width: 360px;
+  }
+}
+
+@media (max-width: 1020px) {
+  .solar__logo-img {
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .container {
+    max-width: 970px;
+  }
+
+  .solar__title-main {
+    font-size: 64px;
+  }
+
+  .solar__title-secondary {
+    font-size: 64px;
+  }
+}
+
+@media (max-width: 768px) {
+  .tabs__header {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .container {
+    max-width: 740px;
+  }
+
+  .solar__title-main {
+    font-size: 44px;
+  }
+
+  .solar__title-secondary {
+    font-size: 44px;
+  }
+}
+
+@media (max-width: 479.98px) {
+  .container {
+    max-width: none;
+  }
+
+  .solar__title-main {
+    font-size: 32px;
+  }
+
+  .solar__title-secondary {
+    font-size: 32px;
+  }
+}
